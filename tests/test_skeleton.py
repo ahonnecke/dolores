@@ -1,6 +1,5 @@
 import pytest
-
-from dolores.skeleton import fib, main
+from snip.skeleton import fib, main
 
 __author__ = "Ashton Honnecke"
 __copyright__ = "Ashton Honnecke"

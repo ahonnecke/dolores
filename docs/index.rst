@@ -1,8 +1,8 @@
 =======
-dolores
+snip
 =======
 
-This is the documentation of **dolores**.
+This is the documentation of **snip**.
 
 .. note::
 

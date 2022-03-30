@@ -5,6 +5,7 @@ import json
 import logging
 import secrets
 import signal
+import sys
 from subprocess import PIPE, Popen
 from time import sleep
 

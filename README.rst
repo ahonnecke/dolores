@@ -1,27 +1,27 @@
 .. These are examples of badges you might want to add to your README:
    please update the URLs accordingly
 
-    .. image:: https://api.cirrus-ci.com/github/<USER>/snip.svg?branch=main
+    .. image:: https://api.cirrus-ci.com/github/<USER>/snarf.svg?branch=main
         :alt: Built Status
-        :target: https://cirrus-ci.com/github/<USER>/snip
-    .. image:: https://readthedocs.org/projects/snip/badge/?version=latest
+        :target: https://cirrus-ci.com/github/<USER>/snarf
+    .. image:: https://readthedocs.org/projects/snarf/badge/?version=latest
         :alt: ReadTheDocs
-        :target: https://snip.readthedocs.io/en/stable/
-    .. image:: https://img.shields.io/coveralls/github/<USER>/snip/main.svg
+        :target: https://snarf.readthedocs.io/en/stable/
+    .. image:: https://img.shields.io/coveralls/github/<USER>/snarf/main.svg
         :alt: Coveralls
-        :target: https://coveralls.io/r/<USER>/snip
-    .. image:: https://img.shields.io/pypi/v/snip.svg
+        :target: https://coveralls.io/r/<USER>/snarf
+    .. image:: https://img.shields.io/pypi/v/snarf.svg
         :alt: PyPI-Server
-        :target: https://pypi.org/project/snip/
-    .. image:: https://img.shields.io/conda/vn/conda-forge/snip.svg
+        :target: https://pypi.org/project/snarf/
+    .. image:: https://img.shields.io/conda/vn/conda-forge/snarf.svg
         :alt: Conda-Forge
-        :target: https://anaconda.org/conda-forge/snip
-    .. image:: https://pepy.tech/badge/snip/month
+        :target: https://anaconda.org/conda-forge/snarf
+    .. image:: https://pepy.tech/badge/snarf/month
         :alt: Monthly Downloads
-        :target: https://pepy.tech/project/snip
+        :target: https://pepy.tech/project/snarf
     .. image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter
         :alt: Twitter
-        :target: https://twitter.com/snip
+        :target: https://twitter.com/snarf
 
 .. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
     :alt: Project generated with PyScaffold
@@ -30,7 +30,7 @@
 |
 
 =======
-snip
+snarf
 =======
 
 

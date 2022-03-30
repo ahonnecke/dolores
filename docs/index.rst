@@ -1,8 +1,8 @@
 =======
-snip
+snarf
 =======
 
-This is the documentation of **snip**.
+This is the documentation of **snarf**.
 
 .. note::
 

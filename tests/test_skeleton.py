@@ -1,5 +1,5 @@
 import pytest
-from snarf.skeleton import fib, main
+from snicker.skeleton import fib, main
 
 __author__ = "Ashton Honnecke"
 __copyright__ = "Ashton Honnecke"

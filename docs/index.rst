@@ -1,8 +1,8 @@
 =======
-snarf
+snicker
 =======
 
-This is the documentation of **snarf**.
+This is the documentation of **snicker**.
 
 .. note::
 

@@ -1,27 +1,27 @@
 .. These are examples of badges you might want to add to your README:
    please update the URLs accordingly
 
-    .. image:: https://api.cirrus-ci.com/github/<USER>/snarf.svg?branch=main
+    .. image:: https://api.cirrus-ci.com/github/<USER>/snicker.svg?branch=main
         :alt: Built Status
-        :target: https://cirrus-ci.com/github/<USER>/snarf
-    .. image:: https://readthedocs.org/projects/snarf/badge/?version=latest
+        :target: https://cirrus-ci.com/github/<USER>/snicker
+    .. image:: https://readthedocs.org/projects/snicker/badge/?version=latest
         :alt: ReadTheDocs
-        :target: https://snarf.readthedocs.io/en/stable/
-    .. image:: https://img.shields.io/coveralls/github/<USER>/snarf/main.svg
+        :target: https://snicker.readthedocs.io/en/stable/
+    .. image:: https://img.shields.io/coveralls/github/<USER>/snicker/main.svg
         :alt: Coveralls
-        :target: https://coveralls.io/r/<USER>/snarf
-    .. image:: https://img.shields.io/pypi/v/snarf.svg
+        :target: https://coveralls.io/r/<USER>/snicker
+    .. image:: https://img.shields.io/pypi/v/snicker.svg
         :alt: PyPI-Server
-        :target: https://pypi.org/project/snarf/
-    .. image:: https://img.shields.io/conda/vn/conda-forge/snarf.svg
+        :target: https://pypi.org/project/snicker/
+    .. image:: https://img.shields.io/conda/vn/conda-forge/snicker.svg
         :alt: Conda-Forge
-        :target: https://anaconda.org/conda-forge/snarf
-    .. image:: https://pepy.tech/badge/snarf/month
+        :target: https://anaconda.org/conda-forge/snicker
+    .. image:: https://pepy.tech/badge/snicker/month
         :alt: Monthly Downloads
-        :target: https://pepy.tech/project/snarf
+        :target: https://pepy.tech/project/snicker
     .. image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter
         :alt: Twitter
-        :target: https://twitter.com/snarf
+        :target: https://twitter.com/snicker
 
 .. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
     :alt: Project generated with PyScaffold
@@ -30,7 +30,7 @@
 |
 
 =======
-snarf
+snicker
 =======
 
 

@@ -31,6 +31,15 @@ Basic Usage
     ^CListening...
     Deleted queue with URL https://us-west-2.queue.amazonaws.com/024726604032/sns-listener_tim-manager-events_88fc71e98a.
 
+===========
+Debug Usage
+===========
+
+Providing the --debug flag will cause you to drop into a debugger when something is popped from the queue, PDB behavior applies.  The payload of the SNS message ('Message') is assigned a namespace ('m').  This means that you get tab completion on the dynamic keys in your message payload.
+
+.. image:: https://user-images.githubusercontent.com/419355/161634911-f0103e13-5c14-4628-84bc-5a001323de7a.gif
+   :width: 600px
+
 ====
 Help
 ====
@@ -65,9 +74,6 @@ Listening
 ==========================
 Inspecting (with debug on)
 ==========================
-.. image:: https://user-images.githubusercontent.com/419355/161607489-40bea93f-a5b3-4056-888b-944916151822.gif
-   :width: 600px
-
 .. code-block:: bash
 
     $ snifter --profile=dev-power --topic=tim-manager-events --debug

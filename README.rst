@@ -38,7 +38,7 @@ Debug Usage
 Providing the --debug flag will cause you to drop into a debugger when something is popped from the queue, PDB behavior applies.  The payload of the SNS message ('Message') is assigned a namespace ('m').  This means that you get tab completion on the dynamic keys in your message payload.
 
 .. image:: https://user-images.githubusercontent.com/419355/161634911-f0103e13-5c14-4628-84bc-5a001323de7a.gif
-   :width: 600px
+   :width: 800px
 
 ====
 Help
@@ -63,13 +63,13 @@ Help
 Login
 =====
 .. image:: https://user-images.githubusercontent.com/419355/161607497-637e13e6-32a2-4d70-8336-9153691d4d61.gif
-   :width: 600px
+   :width: 800px
 
 =========
 Listening
 =========
 .. image:: https://user-images.githubusercontent.com/419355/161607493-9fd60169-0aab-4637-b709-593cf315e6eb.gif
-   :width: 600px
+   :width: 800px
 
 ==========================
 Inspecting (with debug on)

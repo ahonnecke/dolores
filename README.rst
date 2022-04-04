@@ -70,31 +70,28 @@ Inspecting (with debug on)
 
 .. code-block:: bash
 
-    $ snifter -d
-    Profile was not passed, choose a profile: dev-power
-    Choose topic: tim-manager-events
+    $ snifter --profile=dev-power --topic=tim-manager-events --debug
     Listening...
     Listening...
-    Listening...
-    Listening...
-    Listening...
-    Listening...
-    Listening...
-    Listening...
+    Attempting decode of body
     Dropping into debugger for inspection
-    Local message variable is 'm'
+    Local message namespace is 'm'
     PDB commands: 'c' to continue, 'exit()' to exit
-    (Pdb++)
+    [2] > /home/ahonnecke/src/snifter/src/snifter/main.py(161)listen()
+    -> message.delete()
     (Pdb++) list
-    143  	                print("PDB commands: 'c' to continue, 'exit()' to exit")
-    144  	                breakpoint()
-    145  	            else:
-    146  	                print(f"Recieved message, {m.body}")
-    147
-    148  ->	            m.delete()
-    149
-    150  	        print("Listening...")
-    151  	        sleep(1)
-    152
-    153
-    (Pdb++) print(m.body)
+    156  	                print("PDB commands: 'c' to continue, 'exit()' to exit")
+    157  	                breakpoint()
+    158  	            else:
+    159  	                print(f"Recieved message, {show}")
+    160
+    161  ->	            message.delete()
+    162
+    163  	        print("Listening...")
+    164  	        sleep(1)
+    165
+    166
+    (Pdb++) print(m.curve_angle)
+    None
+    (Pdb++) print(m.failed_rsu_ids)
+    ['590d0953-444d-4f0a-842d-3ad425394baf', '8bfacac8-9c8f-41e6-b9a3-09641913da8a', 'd4d7cc04-b98a-4ad8-b9b6-801966c84f68', 'e7e259da-926c-4c0e-93cd-a8507bda76b3']

@@ -1,8 +1,8 @@
 =======
-snicker
+snifter
 =======
 
-This is the documentation of **snicker**.
+This is the documentation of **snifter**.
 
 .. note::
 

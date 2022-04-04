@@ -1,27 +1,27 @@
 .. These are examples of badges you might want to add to your README:
    please update the URLs accordingly
 
-    .. image:: https://api.cirrus-ci.com/github/<USER>/snicker.svg?branch=main
+    .. image:: https://api.cirrus-ci.com/github/<USER>/snifter.svg?branch=main
         :alt: Built Status
-        :target: https://cirrus-ci.com/github/<USER>/snicker
-    .. image:: https://readthedocs.org/projects/snicker/badge/?version=latest
+        :target: https://cirrus-ci.com/github/<USER>/snifter
+    .. image:: https://readthedocs.org/projects/snifter/badge/?version=latest
         :alt: ReadTheDocs
-        :target: https://snicker.readthedocs.io/en/stable/
-    .. image:: https://img.shields.io/coveralls/github/<USER>/snicker/main.svg
+        :target: https://snifter.readthedocs.io/en/stable/
+    .. image:: https://img.shields.io/coveralls/github/<USER>/snifter/main.svg
         :alt: Coveralls
-        :target: https://coveralls.io/r/<USER>/snicker
-    .. image:: https://img.shields.io/pypi/v/snicker.svg
+        :target: https://coveralls.io/r/<USER>/snifter
+    .. image:: https://img.shields.io/pypi/v/snifter.svg
         :alt: PyPI-Server
-        :target: https://pypi.org/project/snicker/
-    .. image:: https://img.shields.io/conda/vn/conda-forge/snicker.svg
+        :target: https://pypi.org/project/snifter/
+    .. image:: https://img.shields.io/conda/vn/conda-forge/snifter.svg
         :alt: Conda-Forge
-        :target: https://anaconda.org/conda-forge/snicker
-    .. image:: https://pepy.tech/badge/snicker/month
+        :target: https://anaconda.org/conda-forge/snifter
+    .. image:: https://pepy.tech/badge/snifter/month
         :alt: Monthly Downloads
-        :target: https://pepy.tech/project/snicker
+        :target: https://pepy.tech/project/snifter
     .. image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter
         :alt: Twitter
-        :target: https://twitter.com/snicker
+        :target: https://twitter.com/snifter
 
 .. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
     :alt: Project generated with PyScaffold
@@ -30,7 +30,7 @@
 |
 
 =======
-snicker
+snifter
 =======
 
 

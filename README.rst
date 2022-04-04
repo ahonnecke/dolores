@@ -2,14 +2,40 @@
 snifter
 =======
 
+**Listen to and inspect AWS SNS topic data!**
 
-    Listen to and inspect AWS SNS topic data
+Because SNS data is ephemeral, we need to make a place to receive and
+store the data if we want to inspect it.  While you can subscribe your
+email address, it's not very handy to do so (SMS is obviously not
+better). A clean (if slightly over-complex) method for doing this is
+to create a temporary SQS queue, then subscribe the queue to the SNS
+topic you want to inspect, and *then* watch that queue.
+
+Snifter does all that in a single command.  The queue is build and
+torn down for you, and it will endlessly listen to that queue,
+including dropping into an interactive debug session that will let you
+inspect the payload in detail.
+
+Provide a profile and a topic, the queue will be torn down when it
+catches Ctrl+c
+
+===========
+Basic Usage
+===========
+
+.. code-block:: bash
+
+    $ snifter --profile=dev-power --topic=tim-manager-events
+    Listening...
+    Listening...
+    ^CListening...
+    Deleted queue with URL https://us-west-2.queue.amazonaws.com/024726604032/sns-listener_tim-manager-events_88fc71e98a.
 
 ====
 Help
 ====
 
-.. code-block:: python
+.. code-block:: bash
 
     $ snifter --help
     usage: snifter [-h] [-p PROFILE] [-d] [-t TOPIC]
@@ -42,7 +68,7 @@ Inspecting (with debug on)
 .. image:: https://user-images.githubusercontent.com/419355/161607489-40bea93f-a5b3-4056-888b-944916151822.gif
    :width: 600px
 
-.. code-block:: python
+.. code-block:: bash
 
     $ snifter -d
     Profile was not passed, choose a profile: dev-power

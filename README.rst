@@ -40,6 +40,7 @@ Inspecting (with debug on)
 ![snifter_debug](https://user-images.githubusercontent.com/419355/161607489-40bea93f-a5b3-4056-888b-944916151822.gif)
 
 .. code-block:: python
+
     $ snifter -d
     Profile was not passed, choose a profile: dev-power
     Choose topic: tim-manager-events

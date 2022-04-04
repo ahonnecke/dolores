@@ -8,6 +8,7 @@ import signal
 import sys
 from subprocess import PIPE, Popen
 from time import sleep
+from types import SimpleNamespace
 
 import boto3
 from botocore.exceptions import ClientError
@@ -135,17 +136,29 @@ class SNSTopicListener:
             MaxNumberOfMessages=1,
         )
         if messages:
-            m = messages[0]  # pylint: disable=invalid-name
+            message = messages[0]  # pylint: disable=invalid-name
+            raw = message.body
+
+            show = raw
+            try:
+                print("Attempting decode of body")
+                payload = json.loads(raw)
+                sns = SimpleNamespace(**payload)
+                show = json.loads(sns.Message)
+                m = SimpleNamespace(**show)
+            except:
+                print("Failed decode of body, dropping into debugger")
+                breakpoint()
 
             if self.debug:
                 print("Dropping into debugger for inspection")
-                print("Local message variable is 'm'")
+                print("Local message namespace is 'm'")
                 print("PDB commands: 'c' to continue, 'exit()' to exit")
                 breakpoint()
             else:
-                print(f"Recieved message, {m.body}")
+                print(f"Recieved message, {show}")
 
-            m.delete()
+            message.delete()
 
         print("Listening...")
         sleep(1)

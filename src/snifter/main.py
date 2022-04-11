@@ -79,14 +79,14 @@ class SNSTopicListener:
                 ],
             }
         )
-        # breakpoint()
         self.sqs_queue.set_attributes(Attributes={"Policy": formattend_policy})
 
     def subscribe(self):
         # Subscribe SQS queue to SNS
-        return self.sns_client.subscribe(
+        self.subscription = self.sns_client.subscribe(
             TopicArn=self.topic_arn, Protocol="sqs", Endpoint=self.sqs_queue_arn
         )
+        return True
 
     def __enter__(self):
 
@@ -104,6 +104,7 @@ class SNSTopicListener:
         return self
 
     def __exit__(self, type, value, tb):
+        self.remove_subscription()
         self.remove_queue()
         self.release()
 
@@ -117,6 +118,17 @@ class SNSTopicListener:
         self.released = True
 
         return True
+
+    def remove_subscription(self):
+        try:
+            self.sns_client.unsubscribe(
+                SubscriptionArn=self.subscription.get("SubscriptionArn")
+            )
+            print("Deleted subscription.")
+            LOGGER.info("Deleted subscription.")
+        except ClientError as error:
+            LOGGER.exception("Couldn't delete subscription")
+            raise error
 
     def remove_queue(self):
         try:
